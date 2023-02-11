@@ -23,14 +23,21 @@
 
 
         <div class="row">
-            <div class="card col-sm-6">
+            <div class="card col-sm-6 mx-auto">
                 <div class="card-body">
                     <h4 class="card-title">Did these packages appear after you downloaded them?</h4>
-                    <p><img src="photos/packages.png" alt="loaded packages" style="width:200px;height:250px;"> </p>
+                    <p><img src="photos/packages.png" alt="loaded packages" style="width:200px;height:275px;">
+                    <ul>
+                        <li>node_modules: when installing npm i ejs</li>
+                        <li>package-json:</li>
+                    </ul>
+                    
+                    
+                    </p>
                 </div>
             </div>
 
-            <div class="card col-sm-6">
+            <div class="card col-sm-6 mx-auto">
                 <div class="card-body">
                     <h4 class="card-title"> Right when you think you are finished... this message pops up</h4>
                     <br><br>
@@ -51,7 +58,7 @@
         </div>
 
         <div class="row">
-            <div class="card col-sm-6">
+            <div class="card col-sm-6 mx-auto">
                 <div class="card-body">
                    <h4 class="card-title">Packages</h4>
       <p class="card-text">Here are some packages that are commonly used when creating a new project
@@ -59,7 +66,7 @@
             <li> npm: this install allows you to download any package or any dependencies within a package </li>
             <li> express: within node, this helps to provide the features that work best when creating an app </li>
             <li> ejs: this allows you to be able to create html template with the lest amount of code. Helps to place code into the client side. </li>
-            <li> nodemon: this helps to automatically restart/refresh the application anytime a new change is made. </li>
+            <li> nodemon: this helps to automatically restart/refresh the application anytime a new change is made. Will also help to redownload packages if they do not show up.</li>
 
         </ul>
 
@@ -68,14 +75,14 @@
             </div>
 
 
-            <div class="card col-sm-6">
+            <div class="card col-sm-6 mx-auto">
                 <div class="card-body">
                     <h4 class="card-title">Issues that can be checked</h4>
       <p class="card-text">There are many instances that can happen when the packages do not install correctly, here are some ways to check before continuing on with the project. et. pushing and deploying.
 
         <ul>
             <li> Did the packages pop up in the file explorer after downloading a package? </li>
-            <li> When downloading ejs, the json packages should appear. If this is not the case, try typing npm init</li>
+            <li> When downloading ejs, the json packages should appear. If this is not the case, try typing npm init -y</li>
             <li> If packages downloaded and you do not want the deployment failed, check the dependencies in either of the json packages.
                 </li>
             <br>
@@ -85,9 +92,8 @@
                 "express": "^4.18.2", <br>
                 "nodemon": "^2.0.20" <br>
               }
+              
             </li>
-
-            <li> ejs </li>
 
         </ul>
 
@@ -109,6 +115,8 @@
         <a href="https://docs.npmjs.com/cli/v9/commands/npm-init">npm-init</a>
 
         <a href="https://www.npmjs.com/package/express">npm-express</a>
+
+        <a href="https://www.npmjs.com/package/ejs">npm-ejs</a>
       </div>
 </footer>
 
