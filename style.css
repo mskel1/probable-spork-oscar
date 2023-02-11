@@ -1,0 +1,27 @@
+body{
+    background-color: #fbe1ff;
+}
+
+.navbar{
+    background-color: #00000033;
+    color: black;
+    font-weight:bold;
+}
+
+.nav-link{
+    color: black;
+}
+
+#message{
+    background-color: #202020;
+    color: white;
+}
+
+.card-body{
+    background-color: #f1fbed;
+}
+
+#depend{
+    background-color: #202020;
+    color: white;
+}
