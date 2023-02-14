@@ -1,6 +1,9 @@
 body{
     background-color: #fbe1ff;
+    font-family: sans-serif;
 }
+
+
 
 .navbar{
     background-color: #00000033;
@@ -16,6 +19,7 @@ body{
     background-color: #202020;
     color: white;
     width: 6cm;
+    text-align: center;
 }
 
 .card{
@@ -28,4 +32,12 @@ body{
     background-color: #202020;
     color: white;
     width: 6cm;
+}
+
+mark{
+    background-color: #f6defd;
+}
+
+li{
+    margin: 12px;
 }

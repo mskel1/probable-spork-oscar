@@ -16,7 +16,7 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/mskel1/probable-spork-oscar">Repo</a>
+                    <a class="nav-link" href="https://github.com/mskel1/probable-spork-oscar">Check out repo</a>
                 </li>
             </ul>
         </nav>
@@ -27,11 +27,6 @@
                 <div class="card-body">
                     <h4 class="card-title">Did these packages appear after you downloaded them?</h4>
                     <p><img src="photos/packages.png" alt="loaded packages" style="width:200px;height:275px;">
-                    <ul>
-                        <li>node_modules: when installing npm i ejs</li>
-                        <li>package-json:</li>
-                    </ul>
-                    
                     
                     </p>
                 </div>
@@ -39,7 +34,7 @@
 
             <div class="card col-sm-6 mx-auto">
                 <div class="card-body">
-                    <h4 class="card-title"> Right when you think you are finished... this message pops up</h4>
+                    <h4 class="card-title"> Right when you think you are finished... this message pops up in render</h4>
                     <br><br>
                     <p id="message">
                     --> Build successful 🎉<br>
@@ -61,12 +56,15 @@
             <div class="card col-sm-6 mx-auto">
                 <div class="card-body">
                    <h4 class="card-title">Packages</h4>
-      <p class="card-text">Here are some packages that are commonly used when creating a new project
+      <p class="card-text">Here are some packages that are commonly used when creating a new project. This uses the terminal commands with gitbash
         <ul>
-            <li> npm: this install allows you to download any package or any dependencies within a package </li>
-            <li> express: within node, this helps to provide the features that work best when creating an app </li>
-            <li> ejs: this allows you to be able to create html template with the lest amount of code. Helps to place code into the client side. </li>
-            <li> nodemon: this helps to automatically restart/refresh the application anytime a new change is made. Will also help to redownload packages if they do not show up.</li>
+            <li> <mark style="font-weight: bold">npm:</mark> this install allows you to download any package or any dependencies within a package </li>
+            <li> <mark style="font-weight: bold"> express:</mark> within node js, this helps to provide the features that work best when creating an app. It's a library that makes deploying a webserver easier. <br>
+            <u>to install type: npm i express </u></li>
+            <li> <mark style="font-weight: bold"> ejs:</mark> this allows you to be able to create html template with the least amount of code. Places plain JavaScript into the html markup. (hence embedded JS templating) <br>
+            <u>to install type: npm i ejs </u></li>
+            <li> <mark style="font-weight: bold">nodemon:</mark> this helps to automatically restart/refresh the application anytime a new change is made. Will also help to redownload packages if they do not show up. <br>
+            <u>to install type: npm i nodemon </u></li>
 
         </ul>
 
@@ -80,12 +78,11 @@
                     <h4 class="card-title">Issues that can be checked</h4>
       <p class="card-text">There are many instances that can happen when the packages do not install correctly, here are some ways to check before continuing on with the project. et. pushing and deploying.
 
-        <ul>
-            <li> Did the packages pop up in the file explorer after downloading a package? </li>
-            <li> When downloading ejs, the json packages should appear. If this is not the case, try typing npm init -y</li>
-            <li> If packages downloaded and you do not want the deployment failed, check the dependencies in either of the json packages.
-                </li>
-            <br>
+        <ol>
+            <li> Did the packages pop up in the file explorer after downloading a package? <br> - if not try typing npm init -y, this will create a node.js project and also create the packages that may be missing</li>
+            <li> Did you project build successfully but then fail deployment because of a missing package? <br> - If you downloaded the packages (for example express) check the dependencies in the package-lock-json folder. The picture below is what that should look like, along with whatever version you are using.</li>
+                </ol>
+            <ul>
             <li id="depend">
             "dependencies": { <br>
                 "ejs": "^3.1.8", <br>
@@ -117,6 +114,8 @@
         <a href="https://www.npmjs.com/package/express">npm-express</a>
 
         <a href="https://www.npmjs.com/package/ejs">npm-ejs</a>
+
+        <a href="https://www.npmjs.com/package/nodemon">npm-nodemon</a>
       </div>
 </footer>
 
